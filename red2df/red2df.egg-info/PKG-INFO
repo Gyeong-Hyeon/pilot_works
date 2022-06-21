@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: red2df
+Version: 1.0.0
+Summary: Create a Pandas dataframe with your Redshift data
+Home-page: https://github.com/Gyeong-Hyeon/pilot_works/tree/main/redshift_conn
+Author: Hyunie
+Author-email: kyunghyun7843@gmail.com
+License: MIT
+Requires-Python: >=3
+License-File: LICENSE.txt

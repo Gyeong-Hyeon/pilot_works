@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+red2df/__init__.py
+red2df.egg-info/PKG-INFO
+red2df.egg-info/SOURCES.txt
+red2df.egg-info/dependency_links.txt
+red2df.egg-info/requires.txt
+red2df.egg-info/top_level.txt
