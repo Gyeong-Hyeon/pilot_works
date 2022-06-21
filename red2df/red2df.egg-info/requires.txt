@@ -1,2 +1,2 @@
 pandas
-psycopgy2
+psycopg2

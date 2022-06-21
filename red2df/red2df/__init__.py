@@ -1,7 +1,7 @@
 import pandas as pd
 import psycopg2
 
-class RedshiftToDF:
+class RedshiftToDf:
     def __init__(self, dbname:str, user:str, password:str, host:str, port:int=5439):
         self.connection = psycopg2.connect(
                                             dbname=dbname
