@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: red2df
-Version: 1.0.3
+Version: 1.0.4
 Summary: Create a Pandas dataframe with your Redshift data
-Home-page: https://github.com/Gyeong-Hyeon/pilot_works/tree/main/redshift_conn
+Home-page: https://github.com/Gyeong-Hyeon/pilot_works/tree/main/red2df
 Author: Hyunie
 Author-email: kyunghyun7843@gmail.com
 License: MIT
@@ -23,14 +23,14 @@ This package will help you to create Pandas dataframe with your Redshift data wi
     ```python
     from red2df import RedshiftToDf
 
-    DB_NAME = "your DB name"
+    DATABASE = "your DB name"
     USER = "your user name"
     PASSWORD = "your password"
     HOST = "your Redshift endpoint url"
     #PORT = your port number in integer. Default is 5439
 
     #create an instance
-    cur = RedshiftToDF(DB_NAME, USER, PASSWORD, HOST)
+    cur = RedshiftToDF(DATABASE, USER, PASSWORD, HOST)
     ```
 
 3. Run SQL queries and print dataframe.
@@ -49,10 +49,17 @@ This package will help you to create Pandas dataframe with your Redshift data wi
     """
     ```
 
-4. You also can save the result of query in csv. Please give `save_csv=True` option when you run `create_df()`.
+4. You also can save the result of query in csv. Please give `save_csv=True` option when you call `create_df()`.
     * The parameters of `create_df()`:
         * `sql`[str] : SQL query you want to run
         * `save_csv`[bool] : Save the result of the given query in csv if True. Default is False
         * `file_path`[str] : Path of csv file. Default is './df.csv'.
+
+5. If you want to close your connection, please call `close_connection()`
+    ```python
+    cur.close_connection()
+    ```
+
+</br>
 
 Please feel free to email me if there is any problem - hyunie@tumblbug.com
