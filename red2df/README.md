@@ -18,7 +18,7 @@ This package will help you to create Pandas dataframe with your Redshift data wi
     #PORT = your port number in integer. Default is 5439
 
     #create an instance
-    cur = RedshiftToDF(DATABASE, USER, PASSWORD, HOST)
+    cur = RedshiftToDf(DATABASE, USER, PASSWORD, HOST)
     ```
 
 3. Run SQL queries and print dataframe.
